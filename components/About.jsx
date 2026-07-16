@@ -1,7 +1,24 @@
 "use client";
 
-import { tools, workflow } from "@/lib/data";
+import { tools, workflow, profile } from "@/lib/data";
 import { SectionHeading, Reveal } from "@/components/Reveal";
+
+function ProfilePhoto() {
+  return (
+    <div className="relative overflow-hidden rounded-2xl border border-line">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/me.jpg"
+        alt={`${profile.name} — video editor`}
+        className="aspect-[4/5] w-full object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent" />
+      <span className="absolute bottom-3 left-3 rounded bg-black/55 px-2.5 py-1 font-mono text-[10px] uppercase tracking-wider text-accent">
+        {profile.name}
+      </span>
+    </div>
+  );
+}
 
 export default function About() {
   return (
@@ -43,7 +60,11 @@ export default function About() {
             </div>
           </div>
 
-          <Reveal delay={0.1}>
+          <div className="flex flex-col gap-6">
+            <Reveal delay={0.05}>
+              <ProfilePhoto />
+            </Reveal>
+            <Reveal delay={0.1}>
               <aside className="card h-fit p-7">
                 <p className="eyebrow mb-6">What I use</p>
                 <div className="space-y-1">
@@ -60,7 +81,8 @@ export default function About() {
                   ))}
                 </div>
               </aside>
-          </Reveal>
+            </Reveal>
+          </div>
         </div>
       </div>
     </section>
