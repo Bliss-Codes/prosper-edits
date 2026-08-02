@@ -131,7 +131,7 @@ function Scrubber() {
           style={{ width: `${progress}%` }}
         />
         <div
-          className="absolute top-1/2 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent shadow-[0_0_0_5px_rgba(234,255,0,0.16)]"
+          className="absolute top-1/2 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent shadow-[0_0_0_5px_rgba(59,130,246,0.18)]"
           style={{ left: `${progress}%` }}
         />
       </div>
