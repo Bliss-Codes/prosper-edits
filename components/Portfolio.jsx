@@ -30,7 +30,7 @@ export default function Portfolio() {
               onClick={() => setActive(c)}
               className={`rounded-full border px-4 py-2 text-sm transition-all ${
                 active === c
-                  ? "border-accent bg-accent text-white"
+                  ? "border-accent bg-accent text-ink"
                   : "border-line text-muted hover:border-accent/40 hover:text-fg"
               }`}
             >
@@ -70,9 +70,9 @@ export default function Portfolio() {
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="flex h-14 w-14 items-center justify-center rounded-full border border-white/25 bg-black/40 backdrop-blur-md transition-all duration-300 group-hover:scale-110 group-hover:border-accent group-hover:bg-accent">
                       {p.video ? (
-                        <Play size={20} className="ml-0.5 fill-white text-white transition-colors group-hover:fill-white group-hover:text-white" />
+                        <Play size={20} className="ml-0.5 fill-white text-white transition-colors group-hover:fill-ink group-hover:text-ink" />
                       ) : (
-                        <Maximize2 size={18} className="text-white transition-colors group-hover:text-white" />
+                        <Maximize2 size={18} className="text-white transition-colors group-hover:text-ink" />
                       )}
                     </div>
                   </div>
@@ -120,7 +120,7 @@ export default function Portfolio() {
               <button
                 onClick={() => setModal(null)}
                 aria-label="Close"
-                className="absolute right-3 top-3 z-10 rounded-full bg-black/60 p-2 text-white transition hover:bg-accent hover:text-white"
+                className="absolute right-3 top-3 z-10 rounded-full bg-black/60 p-2 text-white transition hover:bg-accent hover:text-ink"
               >
                 <X size={18} />
               </button>

@@ -69,7 +69,7 @@ export default function Thumbnails() {
               <button
                 onClick={() => setModal(null)}
                 aria-label="Close"
-                className="absolute right-3 top-3 z-10 rounded-full bg-black/60 p-2 text-white transition hover:bg-accent hover:text-white"
+                className="absolute right-3 top-3 z-10 rounded-full bg-black/60 p-2 text-white transition hover:bg-accent hover:text-ink"
               >
                 <X size={18} />
               </button>

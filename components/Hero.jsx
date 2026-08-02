@@ -36,7 +36,7 @@ const fade = {
 
 export default function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden pt-36 pb-14 md:pt-44 md:pb-16">
+    <section id="top" className="relative overflow-hidden pt-40 pb-14 md:pt-48 md:pb-16">
       {/* Background — drop a showreel.mp4 in /public and uncomment for a
           moving cinematic background. */}
       <div className="absolute inset-0 -z-10">
@@ -131,7 +131,7 @@ function Scrubber() {
           style={{ width: `${progress}%` }}
         />
         <div
-          className="absolute top-1/2 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent shadow-[0_0_0_5px_rgba(59,130,246,0.18)]"
+          className="absolute top-1/2 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent shadow-[0_0_0_5px_rgba(251,191,36,0.2)]"
           style={{ left: `${progress}%` }}
         />
       </div>

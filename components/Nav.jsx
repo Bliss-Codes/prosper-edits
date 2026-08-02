@@ -27,13 +27,13 @@ export default function Nav() {
       initial={{ y: -24, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: [0.22, 0.61, 0.36, 1] }}
-      className="fixed inset-x-0 top-0 z-50 px-4 pt-4"
+      className="fixed inset-x-0 top-0 z-50 flex justify-center px-4 pt-4"
     >
       <nav
-        className={`container-x flex h-[62px] items-center justify-between rounded-full px-5 transition-all duration-300 md:px-7 ${
+        className={`flex h-[64px] w-full max-w-3xl items-center justify-between gap-6 rounded-2xl border px-5 transition-all duration-300 md:w-auto md:gap-10 md:px-7 ${
           scrolled
-            ? "border border-line bg-ink/75 shadow-[0_8px_32px_-12px_rgba(0,0,0,0.85)] backdrop-blur-xl"
-            : "border border-transparent"
+            ? "border-line bg-panel/90 shadow-[0_10px_40px_-12px_rgba(0,0,0,0.9)] backdrop-blur-xl"
+            : "border-line/60 bg-panel/70 backdrop-blur-lg"
         }`}
       >
         <a href="#top" className="flex items-center gap-2.5 font-display text-lg font-extrabold tracking-tight">
@@ -43,11 +43,11 @@ export default function Nav() {
 
         <div className="hidden items-center gap-8 md:flex">
           {links.map((l) => (
-            <a key={l.href} href={l.href} className="text-sm text-muted transition-colors hover:text-fg">
+            <a key={l.href} href={l.href} className="text-sm text-muted underline-offset-8 transition-colors hover:text-fg hover:underline hover:decoration-accent">
               {l.label}
             </a>
           ))}
-          <a href="#contact" className="btn-primary !rounded-full !px-5 !py-2.5">Get in touch</a>
+          <a href="#contact" className="btn-primary !rounded-xl !px-5 !py-2.5">Get in touch</a>
         </div>
 
         <button
@@ -66,7 +66,7 @@ export default function Nav() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="container-x mt-2 overflow-hidden rounded-3xl border border-line bg-ink/95 backdrop-blur-xl md:hidden"
+            className="mt-2 w-full max-w-3xl overflow-hidden rounded-2xl border border-line bg-panel/95 backdrop-blur-xl md:hidden"
           >
             <div className="container-x flex flex-col gap-1 py-4">
               {links.map((l) => (
@@ -79,7 +79,7 @@ export default function Nav() {
                   {l.label}
                 </a>
               ))}
-              <a href="#contact" onClick={() => setOpen(false)} className="btn-primary mt-2 !rounded-full">
+              <a href="#contact" onClick={() => setOpen(false)} className="btn-primary mt-2">
                 Get in touch
               </a>
             </div>

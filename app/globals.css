@@ -19,8 +19,8 @@ body {
 }
 
 ::selection {
-  background: #3B82F6;
-  color: #f4f4f7;
+  background: #FBBF24;
+  color: #0a0a0d;
 }
 
 /* thin custom scrollbar */
@@ -37,9 +37,9 @@ body {
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-accent px-6 py-3
-           text-sm font-semibold text-white transition-all duration-200
-           hover:bg-accent-soft hover:-translate-y-0.5 hover:shadow-[0_10px_40px_-10px_rgba(59,130,246,0.45)]
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#F59E0B] to-[#FCD34D]
+           px-6 py-3 text-sm font-semibold text-ink transition-all duration-200
+           hover:-translate-y-0.5 hover:shadow-[0_10px_40px_-10px_rgba(251,191,36,0.5)]
            focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
   }
 

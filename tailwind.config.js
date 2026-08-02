@@ -15,9 +15,9 @@ module.exports = {
         fg:     "#f4f4f7",
         muted:  "#8b8b98",
         accent: {
-          DEFAULT: "#3B82F6",
-          soft:    "#60A5FA",
-          dim:     "#1E3A5F",
+          DEFAULT: "#FBBF24",
+          soft:    "#FCD34D",
+          dim:     "#4A3A15",
         },
       },
       fontFamily: {
