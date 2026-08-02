@@ -30,24 +30,24 @@ export default function Nav() {
       className="fixed inset-x-0 top-0 z-50 flex justify-center px-4 pt-4"
     >
       <nav
-        className={`flex h-[64px] w-full max-w-3xl items-center justify-between gap-6 rounded-2xl border px-5 transition-all duration-300 md:w-auto md:gap-10 md:px-7 ${
+        className={`flex h-[78px] w-full max-w-5xl items-center justify-between gap-6 rounded-2xl border px-6 transition-all duration-300 md:gap-12 md:px-9 ${
           scrolled
             ? "border-line bg-panel/90 shadow-[0_10px_40px_-12px_rgba(0,0,0,0.9)] backdrop-blur-xl"
             : "border-line/60 bg-panel/70 backdrop-blur-lg"
         }`}
       >
-        <a href="#top" className="flex items-center gap-2.5 font-display text-lg font-extrabold tracking-tight">
+        <a href="#top" className="flex items-center gap-2.5 font-display text-xl font-extrabold tracking-tight">
           <span className="h-2 w-2 rounded-full bg-accent" />
           {profile.name}
         </a>
 
         <div className="hidden items-center gap-8 md:flex">
           {links.map((l) => (
-            <a key={l.href} href={l.href} className="text-sm text-muted underline-offset-8 transition-colors hover:text-fg hover:underline hover:decoration-accent">
+            <a key={l.href} href={l.href} className="text-[0.95rem] text-muted underline-offset-8 transition-colors hover:text-fg hover:underline hover:decoration-accent">
               {l.label}
             </a>
           ))}
-          <a href="#contact" className="btn-primary !rounded-xl !px-5 !py-2.5">Get in touch</a>
+          <a href="#contact" className="btn-primary !rounded-xl !px-6 !py-3">Get in touch</a>
         </div>
 
         <button
@@ -66,7 +66,7 @@ export default function Nav() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="mt-2 w-full max-w-3xl overflow-hidden rounded-2xl border border-line bg-panel/95 backdrop-blur-xl md:hidden"
+            className="mt-2 w-full max-w-5xl overflow-hidden rounded-2xl border border-line bg-panel/95 backdrop-blur-xl md:hidden"
           >
             <div className="container-x flex flex-col gap-1 py-4">
               {links.map((l) => (

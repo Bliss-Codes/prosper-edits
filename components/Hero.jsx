@@ -36,7 +36,7 @@ const fade = {
 
 export default function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden pt-40 pb-14 md:pt-48 md:pb-16">
+    <section id="top" className="relative overflow-hidden pt-44 pb-14 md:pt-52 md:pb-16">
       {/* Background — drop a showreel.mp4 in /public and uncomment for a
           moving cinematic background. */}
       <div className="absolute inset-0 -z-10">
